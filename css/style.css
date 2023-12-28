@@ -1,0 +1,131 @@
+.global-box {
+    width: 1200px;
+    height: 1400px;
+    border: 2px solid black;
+    margin: auto;
+    padding: 54px 76px;
+    box-sizing: border-box;
+}
+/* 404 container */
+.first-group {
+    width: 1045px;
+    height: 540px;
+    position: relative;
+}
+.at-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.at-image h1 {
+    color: #670b0b;
+    font-family: 'poppins';
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+.at-image button {
+    color: #670b0b;
+    background-color: #dac8c8;
+    width: 308px;
+    height: 76px;
+    font-size: 20px;
+    font-family: 'poppins';
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* 3 photo container */
+.container-3photos {
+    width: 1045px;
+    height: 218px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+}
+.photo-1, .photo-2, .photo-3 {
+    width: 298px;
+    height: 218px;
+    background-color: #6a6464;
+    /* box-sizing: border-box; */
+    /* display: grid; */
+    position: relative;
+    cursor: pointer;
+}
+.photo-1 .date, .photo-2 .date, .photo-3 .date{
+    width: 66px;
+    height: 41px;
+    background-color: #ccff33;
+    border-radius: 6px;
+    color: rgb(179, 174, 174);
+    font-family: 'poppins';
+    font-size: 12px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.photo-1 .text, .photo-2 .text, .photo-3 .text {
+    font-size: 20px;
+    /* backdrop-filter: blur(2px); */
+    background-color: rgba(0,0,0,0.5);
+    /* filter: opacity(50%); */
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: none;
+    
+}
+.photo-1:hover .text, .photo-2:hover .text, .photo-3:hover .text{
+    display: block;
+}
+.photo-1 p, .photo-2 p, .photo-3 p {
+    color: white;
+    font-family: 'poppins';
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+/* down container 2 photo */
+.down-container-2photos {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.down-left-photo, .down-right-photo {
+    width: 438px;
+    height: 256px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* filter: brightness(50%); */
+    position: relative;
+    overflow: hidden;
+}
+.down-left-photo .main-photo, .down-right-photo .main-photo {
+    width: 438px;
+    height: 256px;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    filter: brightness(50%);
+}
+.down-left-photo:hover .main-photo, .down-right-photo:hover .main-photo{
+    transform: scale(1.5);
+    filter: brightness(100%);
+}
+.down-left-photo .search, .down-right-photo .search {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* display: block/display: inline-block სივრცის */
